@@ -23,13 +23,14 @@
                 </tr>
             </thead>
             <tbody>
+                <!-- person is the dictionary, users_info is the list of dictionaries -->
                 {% for person in users_info %}
                 <tr>
                     <td>{{person["first_name"]}}</td>
                     <td>{{person["last_name"]}}</td>
                     <td>{{person["first_name"] + " " + person["last_name"]}}</td>
-                    {% endfor %}
                 </tr>
+                {% endfor %}
             </tbody>
         </table>
     </div>
